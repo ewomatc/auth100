@@ -57,7 +57,6 @@ router.post('/login', async (req, res, next) => {
 
 		//check if the user with given email exists
 		const user = await User.findOne({ email: result.email })
-
 		if(!user) {
 			throw createError.NotFound('User not registered')
 		}

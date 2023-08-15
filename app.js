@@ -15,11 +15,7 @@ app.use(express.json())
 
 // load all routes/ endpoints
 app.use('/auth', authRouter)
-app.get('/', (req, res) => {
-  res.status(200).json({
-    message: 'hello auth100'
-  })
-})
+
 
 
 //404 error handler
